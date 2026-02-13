@@ -5,7 +5,7 @@ const messages = [
   "You're always playful and teases me.",
   "And when you pet my head, I melt a little.",
   "When you smile at me, it's dangerous.",
-  "When you hold my hand, I don.t really want to let go.",
+  "When you hold my hand, I don't really want to let go.",
   "You're actually quite dangerous for me.",
   "Anyway...",
   "Happy Valentine's 🙂",
