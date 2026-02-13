@@ -1,16 +1,16 @@
 const messages = [
-  "I thought about writing you a little something.",
-  "I'm usually not great with words,",
-  "but now I’m smiling at my screen like an idiot.",
-  "So I guess that’s a good sign.",
-  "You’re always playful but soft.",
+  "I thought about writing you a little something, but I'm not great with words.",
+  "Now I'm smiling at my screen thinking about you. So I guess that's a good sign.",
+  "I always look forward to seeing you. You make things more fun.",
+  "You're always playful and teases me.",
   "And when you pet my head, I melt a little.",
-  "Which is not good for my heart.",
+  "When you smile at me, it's dangerous.",
+  "When you hold my hand, I don.t really want to let go.",
+  "You're actually quite dangerous for me.",
   "Anyway...",
-  "Happy Valentine’s 🙂",
-  "No pressure.",
+  "Happy Valentine's 🙂",
   "I just wanted to give you a little smile today.",
-  "Thanks for being you."
+  "Because you always make me smile.",
 ];
 
 let index = 0;
@@ -47,7 +47,7 @@ button.addEventListener("click", () => {
 
 function showFinalMessage() {
   const finalMsg = document.createElement("div");
-  finalMsg.innerHTML = "I hope you like it 😌";
+  finalMsg.innerHTML = "Hope it made you smile 😌";
   finalMsg.style.marginTop = "20px";
   finalMsg.style.fontSize = "18px";
   finalMsg.style.opacity = "0";
