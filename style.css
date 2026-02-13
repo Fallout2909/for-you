@@ -1,0 +1,131 @@
+/* ===== Base Layout ===== */
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f8e8ed, #fce4ec);
+  font-family: 'Segoe UI', sans-serif;
+  color: #444;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Fade in page */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Main Container ===== */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* ===== Text Section ===== */
+
+.text-section {
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+#text {
+  font-size: 22px;
+  margin-bottom: 30px;
+  min-height: 60px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ===== Button ===== */
+
+button {
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ff8fb1;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 143, 177, 0.4);
+  animation: pulse 2s infinite;
+}
+
+button:hover {
+  background-color: #ff5c8a;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 150, 180, 0.4);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 143, 177, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 143, 177, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 143, 177, 0); }
+}
+
+/* ===== Image Section ===== */
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 320px;
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+/* Floating image animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ===== Floating Hearts ===== */
+
+.heart {
+  position: absolute;
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(100vh) scale(0.8);
+    opacity: 0;
+  }
+  10% { opacity: 0.6; }
+  to {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* ===== Mobile Responsive ===== */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .image-section img {
+    width: 250px;
+  }
+}
